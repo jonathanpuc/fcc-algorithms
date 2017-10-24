@@ -2,18 +2,18 @@
 Return an empty string if num is not a positive number. */
 
 function repeatStringNumTimes(str, num) {
-  let repeatedWord = '';
+    let repeatedWord = '';
 
-  if (num > 0) {
-    while (num !== 0) {
-      // append str and repeat for value of num
-      repeatedWord += str;
-      num--;
+    if (num > 0) {
+        while (num !== 0) {
+            // append str and repeat for value of num
+            repeatedWord += str;
+            num--;
+        }
+        return repeatedWord;
     }
-    return repeatedWord;
-  }
-  // num is a negative
-  return "";
+    // num is a negative
+    return "";
 }
 
 repeatStringNumTimes("abc", 3);

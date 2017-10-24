@@ -8,29 +8,29 @@ then the addition of the three dots does not add to the string length in determi
 the truncated string. */
 
 function truncateString(str, num) {
-  var temp = '';
-  var truncate = [];
-  // string is longer than num
-  if (str.length > num && num > 3) {
-      // grab only chars from string up to num position
-      temp = str.slice(0,num);
-      // turn into array, remove last 3 chars, turn back to string
-      truncate = temp.split('').splice(0, temp.length-3).join('');
-      // add ending to truncate
-      truncate += '...';
-      return truncate;
-  }
-  // string length is same as num or is less than
-  // no need to truncate
-  else if (str.length === num || num > str.length) {
-      return str;
-  }
-  // num is less than 3
-  else {
-      temp = str.slice(0,num);
-      temp += '...';
-      return temp;
-  }
+    var temp = '';
+    var truncate = [];
+    // string is longer than num
+    if (str.length > num && num > 3) {
+        // grab only chars from string up to num position
+        temp = str.slice(0, num);
+        // turn into array, remove last 3 chars, turn back to string
+        truncate = temp.split('').splice(0, temp.length - 3).join('');
+        // add ending to truncate
+        truncate += '...';
+        return truncate;
+    }
+    // string length is same as num or is less than
+    // no need to truncate
+    else if (str.length === num || num > str.length) {
+        return str;
+    }
+    // num is less than 3
+    else {
+        temp = str.slice(0, num);
+        temp += '...';
+        return temp;
+    }
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 11);
