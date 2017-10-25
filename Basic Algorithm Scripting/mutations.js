@@ -17,4 +17,4 @@ function mutation(arr) {
     return hits === s2.length ? true : false;
 }
 
-mutation(["Mary", "Army"]);
+mutation(["zyxwvutsrqponmlkjihgfedcba", "aqRsTu"]);
